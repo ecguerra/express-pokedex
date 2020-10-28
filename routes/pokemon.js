@@ -22,7 +22,7 @@ router.post('/', function(req, res) {
   // res.send(req.body);
   db.pokemon.findOrCreate({
     where: {name: req.body.name},
-    defaults: {name: req.body.name}
+    defaults: {pokeId: req.body.pokeId}
   })
   .then(([created, wasCreated])=>{
     // res.send(created)
