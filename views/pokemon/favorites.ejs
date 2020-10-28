@@ -6,6 +6,10 @@
                 <a href="/pokemon/<%=fave.id%>">
                 <%= fave.name %>
                 </a>
+                <form method="POST" action="pokemon/?_method=DELETE">
+                    <input hidden type="text" name="name" value="<%= fave.name %>">
+                    <input type="submit" value="Remove from favorites">
+                </form>
             </li>
         <% }); %>
         
