@@ -1,10 +1,23 @@
-<h1><%= pokemon.name %></h1>
-<h2><%= pokemon.id %></h2>
-<img src="<%= pokemon.sprites.other.dream_world.front_default %>" alt="<%= pokemon.name %>">
-<p>Type: 
-    <% pokemon.types.forEach (type =>{ %>
-        <%= type.type.name %>
-    <% }) %>
-</p>
-<p>Height: <%= pokemon.height %> Weight: <%= pokemon.weight %></p>
-<a href="/pokemon">Back to Favorites</a>
+<main class="card-container">
+    <div class="card-top">
+        <h1><%= pokemon.name %></h1>
+        <h1>#<%= pokemon.id %></h1>
+    </div>
+    <div class="card-image">
+        <img src="<%= pokemon.sprites.other.dream_world.front_default %>" alt="<%= pokemon.name %>">
+    </div>
+    <div class="card-bottom">
+        <div class="type-container">
+            <p>Type: </p>
+            <% pokemon.types.forEach (type =>{ %>
+                <p>
+                    <%= type.type.name %>
+                </p>
+                <% }) %>
+        </div>
+        <div class="stats-container">
+            <p>Height: <%= pokemon.height %></p>
+            <p>Weight: <%= pokemon.weight %></p>
+        </div>
+    </div>
+</main>

@@ -51,9 +51,72 @@ li {
 }
 
 li a, li a:visited {
-    color: #243119;
+    color: #0C1B33;
 }
 
 li a:hover {
     color: #FAC8CD;
 }
+
+/* Card Styles */
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #F3FFBD;
+}
+
+.card-top h1 {
+    margin: 2rem 4rem;
+    color: #0C1B33;
+}
+
+.card-image {
+    padding: 1.2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:RGBA(211, 211, 211,0.8);
+}
+
+.card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #344966;
+    font-family: 'Staatliches', cursive;
+    color: #FAC8CD;
+    font-size: 2.6rem;
+}
+
+.type-container, .stats-container {
+    margin: 2rem 4rem;
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.type-container {
+    justify-content: flex-start;
+}
+
+.stats-container {
+    justify-content: flex-end;
+}
+
+.card-bottom p {
+    margin: 1rem;
+}
+
