@@ -48,10 +48,10 @@ router.delete('/', function(req,res) {
 });
 
 
-// GET Pokemon ID // Details
-router.get('/:idx', function(req,res){
+// GET Pokemon name // Details
+router.get('/:name', function(req,res){
   db.pokemon.findOne({
-    where: {id: req.params.idx}
+    where: {name: req.params.name}
   }).then (found => {
     const pokemonDetail = `http://pokeapi.co/api/v2/pokemon/${found.name}`;
     axios.get(pokemonDetail)

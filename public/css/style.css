@@ -44,10 +44,32 @@ a:hover{
     text-decoration: none;
 }
 
+/* Homepage Styles */
+
+.well {
+    box-sizing: border-box;
+    display: inline-block;
+    background-color:RGBA(211, 211, 211,0.8);
+    border: none;
+    width: 30%;
+    max-height: 500px;
+}
+
+.well img {
+    /* width: 80%; */
+    height: 200px;
+    max-width: 200px;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+/* Favorites Styles */
+
 li {
     list-style: none;
     font-size: 2rem;
     padding: 0.8rem;
+    display: inline-block;
 }
 
 li a, li a:visited {
