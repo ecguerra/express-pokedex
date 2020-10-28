@@ -1,0 +1,13 @@
+<h1 class="text-center home">My Favorite Pokemon!</h1>
+<main class="text-center favorite-container">
+    <ul>
+        <% faves.forEach(fave => { %>
+            <li>
+                <a href="/pokemon/<%=fave.id%>">
+                <%= fave.name %>
+                </a>
+            </li>
+        <% }); %>
+        
+    </ul>
+</main>

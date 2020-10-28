@@ -9,7 +9,7 @@ router.get('/', function(req, res) {
   // res.send('Render a page of favorites here');
   db.pokemon.findAll()
   .then (favorites => {
-    res.render('pokemon/index', {faves: favorites})
+    res.render('pokemon/favorites', {faves: favorites})
   })
   .catch(err => {
     console.log(err)

@@ -23,6 +23,8 @@ app.get('/', function(req, res) {
 // Imports all routes from the pokemon routes file
 app.use('/pokemon', require('./routes/pokemon'));
 
+app.use(express.static('public'))
+
 const server = app.listen(port, function() {
   console.log('...listening on', port );
 });
